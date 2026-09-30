@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="navbar" id="navMenu">
+
+        <nav class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+    </header>
+
+
+    <main>
+
+        <section id="home" class="hero">
+            <p class="hero-subtitle">
+                CS240 Frontend Development
+            </p>
+            <h1>Konpob Kruemyarat</h1>
+            <div class="student-id">
+                Student ID: 1680704168
+            </div>
+        </section>
+
+
+        <section id="gallery" class="gallery">
+            <div class="card-grid">
+                
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://nakorncode.com/img/cheatsheets/vscode.webp" alt="vscode">
+                    </div>
+                    <div class="card-content">
+                        <h3>Visual Studio Code</h3>
+                        <a href="https://nakorncode.com/cheatsheets/vscode/" >View More →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRbmxRh47BUL12zD-j9J9r6qtkHOqA_uiaJPX2ZQjLwoUfNv4M48mkX7VF&s=10" alt="Git">
+                    </div>
+                    <div class="card-content">
+                        <h3>Git</h3>
+                        <a href="https://nakorncode.com/cheatsheets/git/">View More →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/3840px-HTML5_logo_and_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="HTML">
+                    </div>
+                    <div class="card-content">
+                        <h3>HTML</h3>
+                        <a href="https://nakorncode.com/cheatsheets/html/">View More →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://nakorncode.com/img/cheatsheets/css.webp" alt="CSS">
+                    </div>
+                    <div class="card-content">
+                        <h3>CSS</h3>
+                        <a href="https://nakorncode.com/cheatsheets/css/">View More →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://nakorncode.com/img/cheatsheets/bootstrap.webp" alt="Bootstrap">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bootstrap</h3>
+                        <a href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">View More →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://nakorncode.com/img/cheatsheets/tailwind.webp" alt="Tailwind CSS">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tailwind CSS</h3>
+                        <a href="https://nerdcave.com/tailwind-cheat-sheet">View More →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://nakorncode.com/img/cheatsheets/javascript.webp" alt="JavaScript">
+                    </div>
+                    <div class="card-content">
+                        <h3>JavaScript</h3>
+                        <a href="https://nakorncode.com/cheatsheets/javascript/">View More →</a>	
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://nakorncode.com/img/cheatsheets/typescript.webp" alt="TypeScript">
+                    </div>
+                    <div class="card-content">
+                        <h3>TypeScript</h3>
+                        <a href="https://nakorncode.com/cheatsheets/typescript/">View More →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+  
+    <footer class="footer">
+        <h2>Let's create something together.</h2>
+        <p>Konpob © 2026</p>
+        <a href="#home">↑ Back to top</a>
+    </footer>
+
+
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const navMenu = document.getElementById("navMenu");
+
+        menuButton.addEventListener("click", function () {
+            navMenu.classList.toggle("show");
+        });
+    </script>
+
+</body>
+
+</html>

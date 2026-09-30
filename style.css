@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #191919;
+    border-bottom: 1px solid #252525;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #777;
+}
+
+.menu-button {
+    display: none;
+
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+.hero {
+    min-height: 40vh;
+
+    padding: 100px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #191919;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.student-id {
+    width: fit-content;
+
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid #a3a3a3;
+
+    font-size: 18px;
+}
+
+
+
+.gallery {
+    padding: 100px 8%;
+    background: #202020;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #f5f5f5;
+
+    border: 1px solid #ddd;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 220px;
+
+    background: #d8d8d8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-content a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.footer {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background: #191919;
+    color: white;
+}
+
+.footer h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+
+    margin-bottom: 25px;
+}
+
+.footer p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-menu {
+        gap: 25px;
+    }
+
+    .hero {
+        padding: 80px 5%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .gallery {
+        padding: 80px 5%;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer {
+        padding: 60px 5%;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .navbar {
+        justify-content: flex-end;
+    }
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        gap: 0;
+
+        background: rgb(189, 185, 184);
+        border-top: 1px solid #ddd;
+    }
+
+    .navbar.show .nav-menu {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 15px 5%;
+        color: #000000;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu-button {
+        display: block;
+        color: white;
+    }
+
+
+    .hero {
+        min-height: 60vh;
+
+        padding: 60px 5%;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .student-id {
+        font-size: 14px;
+    }
+
+
+    .gallery {
+        padding: 60px 5%;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: 180px;
+    }
+
+
+    .footer {
+        padding: 60px 5%;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
